@@ -2,15 +2,9 @@ import random
 #choices
 def Player_Choice():
     player = input('Enter your choice: rock, paper, scissors\n')
-    if player == 'rock':
-        player == r
-    elif player == 'paper':
-        player == p
-    elif player == 'scissors':
-        player == s
-    else:
+    if player not in [r,s,p]: 
         print("idiot check spelling and try again")
-        Player_Choice()
+        player = Player_Choice()
     return player
 
 def Computer_Choice():
@@ -26,15 +20,13 @@ def Result():
         print('YOU LOST')
     elif player_score == comp_score:
         print('TIE')
-    return x
+    print(x)
+    return 
 
 #mainblock
 r = "rock"
 s = 'scissors'
 p = 'paper'
-r>s
-s>p
-p>r
 player_score = 0
 comp_score = 0
 n = int(input("how many rounds you want?:\n"))
@@ -46,5 +38,6 @@ for i in range(n):
         player_score +=1
     elif player < computer:
         comp_score +=1
+Result()
    
-print(Result())
+
