@@ -12,7 +12,6 @@ def Computer_Choice():
     return computer
 
 def Result():
-    x = "Thanks 4 Playing"
     print("You: ",player_score,"Computer: ", comp_score)
     if player_score > comp_score:
         print ('YOU WON')
@@ -20,8 +19,8 @@ def Result():
         print('YOU LOST')
     elif player_score == comp_score:
         print('TIE')
-    print(x)
-    return 
+    print("Thanks 4 Playing")
+     
 
 #mainblock
 r = "rock"
