@@ -1,2 +1,2 @@
 # ROCK-PAPER-SCISSORS
-game
+a very nice game made in pythong
